@@ -43,7 +43,7 @@ int main(int argc, char** argv)
     {
         time2 = MPI_Wtime();
         Ifinal = (Ifinal + (func(a) + func(b)) / 2) * h;
-        eps = fabs(1.2246281078 - Ifinal);
+        eps = fabs(1.2246281058 - Ifinal);
 
         printf("\nIntegral = %.10f\n\nError = %.10f\n\nTime = %f\n\n", Ifinal, eps, time2 - time1);
     }
